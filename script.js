@@ -1,8 +1,8 @@
-var css = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.querySelector("#gradient");
-var button = document.querySelector(".randBtn");
+const css = document.querySelector("h3");
+const color1 = document.querySelector(".color1");
+const color2 = document.querySelector(".color2");
+const body = document.querySelector("#gradient");
+const button = document.querySelector(".randBtn");
 
 function setGradient() {
   body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
@@ -13,10 +13,10 @@ function setGradient() {
 }
 
 function random_bg_color() {
-  var x = Math.floor(Math.random() * 256);
-  var y = Math.floor(Math.random() * 256);
-  var z = Math.floor(Math.random() * 256);
-  var bgColor = `rgb(${x},${y},${z})`;
+  const x = Math.floor(Math.random() * 256);
+  const y = Math.floor(Math.random() * 256);
+  const z = Math.floor(Math.random() * 256);
+  const bgColor = `rgb(${x},${y},${z})`;
   return bgColor;
 }
 
